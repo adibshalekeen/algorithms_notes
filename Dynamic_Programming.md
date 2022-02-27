@@ -71,8 +71,10 @@ Generally dynamic programming is a good candiadate for a solution of they have a
 	- Asking for the optimal way to play a game
 
 1) Interval
-	Problems invlving finding the subproblem defined on an interval $dp[i][j]$
+	Problems involving finding the subproblem defined on an interval $dp[i][j]$
 	[Palindrome Counting](dp/Palindrome_Counting)
 	[Palindrome Partitioning](dp/Palindrome_Partitioning)
 	[Combine String](dp/Combine_String)
-	[Festival Game](dp/Festival_Game)
+2) Two Sequences
+	Problems with two sequences in the problem statement. $dp[i][j]$ represents the max/min/best value for the first sequence ending in index i and second sequence ending in index j
+	[Edit Distance](dp/Edit_Distance)
