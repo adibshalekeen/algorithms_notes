@@ -1,6 +1,7 @@
 Count the number of palindromes that exist in a particular string. Duplicates are allowed as long as they cover distinct intervals of the string. Empty strings do not count towards the total.
 
-Ex.
+ex.
+
 Input = abab
 Output = 6
 

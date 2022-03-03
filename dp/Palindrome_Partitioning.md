@@ -2,6 +2,7 @@ Given some string $s$ partition $s$ such that every substring in the partition i
 
 
 ex.
+
 Input: aab
 Output: 2
 

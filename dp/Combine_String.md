@@ -1,6 +1,7 @@
 Given 3 strings $s1$, $s2$, $s3$ return whether or not its possible to make the 3rd string by merging the 2 other strings. The relative order of the characters in $s1$ and $s2$ must be maintained and every character in $s1$ and $s2$ must be used.
 
 ex.
+
 $s1$ = abe
 $s2$ = cdf
 $s3$ = abcdef

@@ -78,3 +78,5 @@ Generally dynamic programming is a good candiadate for a solution of they have a
 2) Two Sequences
 	Problems with two sequences in the problem statement. $dp[i][j]$ represents the max/min/best value for the first sequence ending in index i and second sequence ending in index j
 	[Edit Distance](dp/Edit_Distance)
+	[Delete String](dp/Delete_String)
+	[Longest Common Subsequence](dp/Longest_Common_Subsequence)
