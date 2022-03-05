@@ -14,7 +14,7 @@ Solution:
 
 We cant use a greedy solution because the letters in $s1$ and $s2$ have to be used sequentially. For example, if you have the following case $s1 = abe$, $s2= abef$, $s3 = abeafbe$ , you need to use $abe$ from $s2$ first, or you wont be able to use the $f$ later on in the string. For a dynamic programming approach, we can define our matrix $dp[i][j]$ as a boolean matrix. Each element $(i, j)$ is True if we can generate $s3[0: i + j + 1]$ from the first $i$ letters in $s1$ and the first $j$ letters in s2. The recurrance relation here is:
 
-$dp[i][j] = (dp[i-1][j]\ and\ s1[i - 1] == s3[i + j - 1])\ or\ (dp[i][j-1] and s2[j - 1] == s3[i + j - 1])$
+$dp[i][j] = (dp[i-1][j]\ and\ s1[i - 1] == s3[i + j - 1])\ or\ (dp[i][j-1]\ and\ s2[j - 1] == s3[i + j - 1])$
 
 If $dp[len(s1)][len(s2)] = True$ then we can create $s3$ by mixing $s1$ and $s2$ .
 

@@ -80,3 +80,8 @@ Generally dynamic programming is a good candiadate for a solution of they have a
 	[Edit Distance](dp/Edit_Distance)
 	[Delete String](dp/Delete_String)
 	[Longest Common Subsequence](dp/Longest_Common_Subsequence)
+
+3) Sequence
+	Finding the max / min of some sequence with rules that define the recurrence relation between elements
+	[House Robber](dp/House_Robber)
+	[Coin Change](dp/Coin_Change)

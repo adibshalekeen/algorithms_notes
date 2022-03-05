@@ -20,10 +20,8 @@ def palindrome_counting(s: str) -> int:
 	# Initialize all substrings of length 1 to be a palindrome
 	# Set all substrings where i > j to be true
 	for i in range(n):
-		for j in range(0, i):
+		for j in range(0, i + 1):
 			dp[i][j] = True
-	for i in range(n):
-		print(dp[i])
 	# Iterate through based on the length of substring and starting index
 	# its 0 indexed so 0 is reserved for length 1 strings
 	# Remember each individual char is technically a palindrome

@@ -1,6 +1,5 @@
 Given a string $s$ and integer $k$ return the length of the longest substring of $s$ that contains at most $k$ distinct characters
 
-
 ex.
 
 $s$ = "eceba", k = 2
