@@ -1,4 +1,4 @@
--> A post-order traversal of a tree
+A post-order traversal of a tree
 
 ![[basic_tree]]
 
@@ -21,6 +21,38 @@ def dfs(node: TreeNode):
 	print(node.val)
 ```
 
+We can also use an interative algorithm to do the same traversal in a much more painful way
+
+```
+def dfs(node: TreeNode):
+	if node is None:
+		return
+
+	stack = []
+
+	while True:
+		# Populate stack in correct order (left -> right -> root)
+		while node is not None:
+			if node.right is not None:
+				stack.append(node.right)
+			stack.append(node)
+			node = node.left
+
+		node = stack.pop()
+		
+		if node.right is not None and stack[-1] == node.right:
+			stack.pop()
+			stack.append(node)
+			node = node.right
+		else:
+			print(node.val)
+			node = None
+
+		if len(stack) == 0:
+			break
+		
+```
+
 To calculate the run-time, we need to take a look at the adjacency list of this tree
 
 1 -> 2, 3
@@ -31,4 +63,4 @@ To calculate the run-time, we need to take a look at the adjacency list of this 
 6:
 7:
 
-At each node, we will have to traverse each node 
+DFS for a tree traverses every node in the tree, so our runtime is O(n) where n is the number of nodes in the tree.
