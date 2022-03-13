@@ -86,4 +86,3 @@ Generally dynamic programming is a good candiadate for a solution of they have a
 	Finding the max / min of some sequence with rules that define the recurrence relation between elements
 	[House Robber](dp/House_Robber)
 	[Coin Change](dp/Coin_Change)
-	[Contiguous Subarrays](dp/Contiguous_Subarrays)
